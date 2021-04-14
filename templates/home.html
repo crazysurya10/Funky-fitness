@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="{{url_for('static', filename='Images/bike.svg')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='Images/home.css')}}">
+    <meta name="viewpoint" , content="width=device-width, initial-scale=1"> link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <div class="navbar">
+        <h1>Funky Fitness</h1>
+        <div class="links">
+            <button class="menu">
+                <i class="fas fa-bars"></i>
+                Menu
+            </button>
+            <ul class='links-menu'>
+                <div class="section1">
+                    <li><a href="/add-workout">Add Workout</a></li>
+                    <img src="{{url_for('static', filename='Images/running.png')}}" alt="Hi">
+                </div>
+                <div class="section2">
+                    <li><a href="#">Add Meal Log</a></li>
+                    <img src="{{url_for('static', filename='Images/meal.png')}}" alt="Hi">
+                </div>
+                <div class="section3">
+                    <li><a href="#">Change Avatar</a></li>
+                    <img src="{{url_for('static', filename='Images/avatar.png')}}" alt="Hi">
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Track your health and fitness</h2>
+        <button class="login">Login</button>
+        <button class="sign_up">Sign Up</button>
+    </div>
+
+</body>
+
+</html>

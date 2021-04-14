@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.navbar {
+    background: #50BE6F;
+    position: sticky;
+    height: 7rem;
+    top: 0;
+}
+
+.navbar h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: auto;
+}
+
+
+.links {
+    positioN: relative
+    display: inline-block;
+}
+
+.section1, .section2, .section3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.section1:hover, .section2:hover, .section3:hover{
+    background-color: #db8f65;
+}
+
+.section1 li a, .section2 li a, .section3 a {
+    text-decoration: none;
+    color: #9E9F5A;
+}
+
+
+
+.links-menu {
+    display: none;
+    background-color: #AD7C61;
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+.links:hover .links-menu {
+   display: block;
+}
+
+.navbar button {
+    width:2rem;
+    height: 1rem;
+}
+
+.main {
+    background-image: url("/static/Images/Soccer.png");    
+    height: 60rem;
+    background-position:center;
+    background-size: cover;
+}
+
+
+.main h2 {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main button {
+    background-color: #FF5656;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 2rem;
+    padding_bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius:
+}
+
+
+.main button:hover {
+    background-color:#50BE6F;
+    width: 11rem;
+    height: 3rem; 
+    font-size: 2rem;
+    padding_bottom: 1rem;
+}
+
+.login {
+    position: absolute;
+    top: 20rem;
+    left: 47.5rem;
+}
+
+
+.sign_up {
+    position: absolute;
+    top: 20rem;
+    left: 62.5rem;
+}

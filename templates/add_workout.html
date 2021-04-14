@@ -1,0 +1,30 @@
+<!DOCKTYPE html>
+<html>
+
+<head>
+    <title>Add workout</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='Images/add_workout.css')}}">
+</head>
+
+<body>
+    <h1>WORKOUTS HERE!!</h1>
+    <div class="inputs">
+        <form action="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="type">Type:</label>
+            <input type="text" name="type" id="type">
+
+            <label for="reps">Reps:</label>
+            <input type="text" name="reps" id="reps">
+
+            <label for="date">Date:</label>
+            <input type="text" name="date" id="date">
+            <button type="Submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
