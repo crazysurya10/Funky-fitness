@@ -5,6 +5,7 @@
 
 body {
     background-color: #E1DBA4;
+    overflow-x: hidden;
 }
 
 .inputs {
@@ -35,8 +36,29 @@ body {
     position: relative;
     top: 0%;
     left: 90%;
-    width: 6rem;
-    height:2rem;
+    width: 7rem;
+    height:3rem;
     background-color: #C4C4C4;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+.show-up-bar {
+    background-color: #9994D6;
+    position: absolute;
+    bottom: 80%;
+    left: 85%;
+    width: 17%;
+    height: 25%;
+    border-radius: 5rem;
+}
+
+.show-up-bar h1 {
+    position: relative;
+    top: 50%;
+    left: 20%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
 }

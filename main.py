@@ -8,7 +8,7 @@ def home():
     return render_template("home.html")
 
 @app.route("/add-workout")
-def add_workout():
+def add_workout(methods=["POST", "GET"]):
     return render_template("add_workout.html")
 
 if __name__ == "__main__":
