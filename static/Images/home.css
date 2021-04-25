@@ -50,9 +50,14 @@
    display: block;
 }
 
-.navbar button {
-    width:2rem;
-    height: 1rem;
+.fas  {
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbar span {
+    width: 7rem;
+    height: 5rem;
 }
 
 .main {
@@ -73,7 +78,7 @@
 
 }
 
-.main button {
+.main a button {
     background-color: #FF5656;
     width: 10rem;
     height: 2.5rem;
@@ -85,7 +90,7 @@
 }
 
 
-.main button:hover {
+.main a button:hover {
     background-color:#50BE6F;
     width: 11rem;
     height: 3rem; 

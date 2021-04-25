@@ -1,38 +1,28 @@
-<!DOCKTYPE html>
-<html>
+{%extends "base.html"%} {% block title %}Add Workout{% endblock %} {% block text %}
+<link rel="stylesheet" href="{{url_for('static', filename='Images/add_workout.css')}}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/00d65123ff.js" crossorigin="anonymous"></script>{% endblock %} {% block content%}
+<a href="/">FUNKY FITNESS</a>
+<div class="inputs">
+    <form method="POST">
+        <div class="name">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <label for="type">Type:</label>
+        <input type="text" name="type" id="type">
 
-<head>
-    <title>Add workout</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='Images/add_workout.css')}}">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/00d65123ff.js" crossorigin="anonymous"></script>
-</head>
+        <label for="reps">Reps:</label>
+        <input type="text" name="reps" id="reps">
 
-<body>
-    <h1>WORKOUTS HERE!!</h1>
-    <div class="inputs">
-        <form action="POST">
-            <div class="name">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <a href="#"><i class="fas fa-search"></i></a>
-            </div>
-            <label for="type">Type:</label>
-            <input type="text" name="type" id="type">
+        <label for="date">Date:</label>
+        <input type="text" name="date" id="date">
+        <button type="Submit">Submit</button>
 
-            <label for="reps">Reps:</label>
-            <input type="text" name="reps" id="reps">
-
-            <label for="date">Date:</label>
-            <input type="text" name="date" id="date">
-            <button type="Submit">Submit</button>
-
-        </form>
-    </div>
-    <span class="show-up-bar">
+    </form>
+</div>
+<span class="show-up-bar">
         <h1>ADD WORKOUT</h1>
-    </span>
-</body>
-
-</html>
+    </span> {% endblock %}
